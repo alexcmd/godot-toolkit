@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# godot-toolkit/AgentBridge/SCsub
+from misc.utility.scons_hints import *
+
+Import("env")
+Import("env_modules")
+
+env_ab = env_modules.Clone()
+
+env_ab.add_source_files(env.modules_sources, "*.cpp")
+
+if env.editor_build:
+    env_ab.add_source_files(env.modules_sources, "editor/*.cpp")

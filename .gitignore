@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Python (SCons / config.py)
+__pycache__/
+*.pyc
+.sconsign.dblite
+
+# Build artifacts (should stay in godot/bin, not here)
+*.obj
+*.lib
+*.exe
+*.pdb
+
+# Godot project cache (if ever symlinked in)
+.godot/
